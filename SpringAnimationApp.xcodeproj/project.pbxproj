@@ -9,21 +9,26 @@
 /* Begin PBXBuildFile section */
 		72BEE7642AFB858D00C506A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE7632AFB858D00C506A9 /* AppDelegate.swift */; };
 		72BEE7662AFB858D00C506A9 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE7652AFB858D00C506A9 /* SceneDelegate.swift */; };
-		72BEE7682AFB858D00C506A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE7672AFB858D00C506A9 /* ViewController.swift */; };
+		72BEE7682AFB858D00C506A9 /* SpringViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE7672AFB858D00C506A9 /* SpringViewController.swift */; };
 		72BEE76B2AFB858D00C506A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72BEE7692AFB858D00C506A9 /* Main.storyboard */; };
 		72BEE76D2AFB858F00C506A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72BEE76C2AFB858F00C506A9 /* Assets.xcassets */; };
 		72BEE7702AFB858F00C506A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72BEE76E2AFB858F00C506A9 /* LaunchScreen.storyboard */; };
+		72BEE7792AFB85AD00C506A9 /* SpringAnimation in Frameworks */ = {isa = PBXBuildFile; productRef = 72BEE7782AFB85AD00C506A9 /* SpringAnimation */; };
+		72BEE77B2AFB96A000C506A9 /* Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE77A2AFB96A000C506A9 /* Animation.swift */; };
+		72BEE77D2AFB96B800C506A9 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72BEE77C2AFB96B800C506A9 /* DataStore.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72BEE7602AFB858D00C506A9 /* SpringAnimationApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SpringAnimationApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72BEE7632AFB858D00C506A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72BEE7652AFB858D00C506A9 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		72BEE7672AFB858D00C506A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		72BEE7672AFB858D00C506A9 /* SpringViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringViewController.swift; sourceTree = "<group>"; };
 		72BEE76A2AFB858D00C506A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		72BEE76C2AFB858F00C506A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		72BEE76F2AFB858F00C506A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72BEE7712AFB858F00C506A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		72BEE77A2AFB96A000C506A9 /* Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Animation.swift; sourceTree = "<group>"; };
+		72BEE77C2AFB96B800C506A9 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72BEE7792AFB85AD00C506A9 /* SpringAnimation in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,15 +62,65 @@
 		72BEE7622AFB858D00C506A9 /* SpringAnimationApp */ = {
 			isa = PBXGroup;
 			children = (
-				72BEE7632AFB858D00C506A9 /* AppDelegate.swift */,
-				72BEE7652AFB858D00C506A9 /* SceneDelegate.swift */,
-				72BEE7672AFB858D00C506A9 /* ViewController.swift */,
-				72BEE7692AFB858D00C506A9 /* Main.storyboard */,
-				72BEE76C2AFB858F00C506A9 /* Assets.xcassets */,
-				72BEE76E2AFB858F00C506A9 /* LaunchScreen.storyboard */,
 				72BEE7712AFB858F00C506A9 /* Info.plist */,
+				72BEE7822AFBA06F00C506A9 /* App */,
+				72BEE7802AFBA00600C506A9 /* ViewControllers */,
+				72BEE77E2AFB96BF00C506A9 /* Models */,
+				72BEE77F2AFB96CA00C506A9 /* Services */,
+				72BEE7812AFBA05300C506A9 /* Storybords */,
+				72BEE7832AFBA08200C506A9 /* Resourses */,
 			);
 			path = SpringAnimationApp;
+			sourceTree = "<group>";
+		};
+		72BEE77E2AFB96BF00C506A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE77A2AFB96A000C506A9 /* Animation.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		72BEE77F2AFB96CA00C506A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE77C2AFB96B800C506A9 /* DataStore.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		72BEE7802AFBA00600C506A9 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE7672AFB858D00C506A9 /* SpringViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		72BEE7812AFBA05300C506A9 /* Storybords */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE76E2AFB858F00C506A9 /* LaunchScreen.storyboard */,
+				72BEE7692AFB858D00C506A9 /* Main.storyboard */,
+			);
+			path = Storybords;
+			sourceTree = "<group>";
+		};
+		72BEE7822AFBA06F00C506A9 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE7652AFB858D00C506A9 /* SceneDelegate.swift */,
+				72BEE7632AFB858D00C506A9 /* AppDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		72BEE7832AFBA08200C506A9 /* Resourses */ = {
+			isa = PBXGroup;
+			children = (
+				72BEE76C2AFB858F00C506A9 /* Assets.xcassets */,
+			);
+			path = Resourses;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +139,9 @@
 			dependencies = (
 			);
 			name = SpringAnimationApp;
+			packageProductDependencies = (
+				72BEE7782AFB85AD00C506A9 /* SpringAnimation */,
+			);
 			productName = SpringAnimationApp;
 			productReference = 72BEE7602AFB858D00C506A9 /* SpringAnimationApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +170,9 @@
 				Base,
 			);
 			mainGroup = 72BEE7572AFB858D00C506A9;
+			packageReferences = (
+				72BEE7772AFB85AD00C506A9 /* XCRemoteSwiftPackageReference "SpringAnimation" */,
+			);
 			productRefGroup = 72BEE7612AFB858D00C506A9 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -138,8 +200,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72BEE7682AFB858D00C506A9 /* ViewController.swift in Sources */,
+				72BEE7682AFB858D00C506A9 /* SpringViewController.swift in Sources */,
 				72BEE7642AFB858D00C506A9 /* AppDelegate.swift in Sources */,
+				72BEE77B2AFB96A000C506A9 /* Animation.swift in Sources */,
+				72BEE77D2AFB96B800C506A9 /* DataStore.swift in Sources */,
 				72BEE7662AFB858D00C506A9 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -218,6 +282,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
@@ -275,6 +340,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				INFOPLIST_FILE = SpringAnimationApp/App/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
@@ -306,9 +372,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftbook.ru.SpringAnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -333,9 +402,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = swiftbook.ru.SpringAnimationApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -361,6 +433,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		72BEE7772AFB85AD00C506A9 /* XCRemoteSwiftPackageReference "SpringAnimation" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/LexDeBash/SpringAnimation.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.3.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		72BEE7782AFB85AD00C506A9 /* SpringAnimation */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 72BEE7772AFB85AD00C506A9 /* XCRemoteSwiftPackageReference "SpringAnimation" */;
+			productName = SpringAnimation;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 72BEE7582AFB858D00C506A9 /* Project object */;
 }
